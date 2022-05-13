@@ -21,15 +21,12 @@ jobs:
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
+      node-version: ${{ matrix.node-version }}
 
     - name: Install dependencies
       run: npm install
-      with:
-        working-directory: ./assets
+      working-directory: ./assets
 
     - name: Build
       run: npm run build
-      with:
-        working-directory: ./assets
+      working-directory: ./assets
