@@ -1,4 +1,4 @@
-name: NodeJS with Webpack
+name: NodeJS with CI CD
 
 on:
   push:
@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./assets
 
     strategy:
       matrix:
@@ -22,8 +24,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    - name: Install dependencies
+      run: npm install
+      working-directory: ${{working-directory}}
+
     - name: Build
-      run: |
-        cd assets
-        npm install
-        npx run build
+      run: npm run build
+      working-directory: ${{working-directory}}
