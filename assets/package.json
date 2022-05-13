@@ -1,6 +1,7 @@
 {
   "name": "aws-bookstore-demo-app",
   "version": "0.1.0",
+  "homepage": "https://NoorMire.github.io/COMPX341-A3",
   "private": true,
   "dependencies": {
     "@types/graphql": "^14.0.5",
