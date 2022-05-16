@@ -25,7 +25,7 @@ export class BestSellersBar extends React.Component {
           {bestSellers.map(book =>
             <div className="col-md-2 hidden-sm hidden-xs" key={book}>
               <LinkContainer to="/best">
-                <NavItem><img src={book} className="thumbs" /></NavItem>
+                <NavItem><img src={book} className="thumbs" alt="book image" /></NavItem>
               </LinkContainer>
             </div>)}
         </div>
