@@ -1,3 +1,5 @@
+// Name : Noor Mire
+// Id   : 1521490
 //
 // In production, we register a service worker to serve assets from local cache.
 

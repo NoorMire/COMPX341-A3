@@ -1,4 +1,5 @@
-//
+// Name : Noor Mire
+// Id   : 1521490
 export default {
   apiGateway: {
     REGION: "us-east-1",
